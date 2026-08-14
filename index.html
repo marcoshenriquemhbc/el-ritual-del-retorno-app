@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es-EC">
+  <head>
+    <!-- Preconnect para fuentes (reduce latencia) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Aplica el tema guardado antes de que el JS monte la UI (evita flash) -->
+    <script>
+      var savedTheme = localStorage.getItem('app_theme');
+      var theme = (savedTheme === 'dark' || savedTheme === 'light') ? savedTheme : 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') document.documentElement.classList.add('dark-theme');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="El Ritual del Retorno" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" id="apple-app-title" content="El Ritual del Retorno">
+    <title id="app-title">El Ritual del Retorno</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-180.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/icon-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="/icon-512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Registro del Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js').catch(function (err) {
+          console.warn('SW no registrado:', err);
+        });
+      }
+    </script>
+
+    <!-- Captura del prompt de instalación -->
+    <script>
+      window.deferredPrompt = null;
+      window.addEventListener('beforeinstallprompt', function (e) {
+        e.preventDefault();
+        window.deferredPrompt = e;
+        window.dispatchEvent(new Event('pwaInstallReady'));
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Header -->
+      <header class="app-header">
+        <span class="app-header__title" id="header-title">El Ritual del Retorno</span>
+        <button class="icon-btn" id="theme-toggle" aria-label="Alternar tema">◐</button>
+      </header>
+
+      <!-- Views -->
+      <main class="app-main" id="app-main">
+        <section class="view" id="view-inicio"></section>
+        <section class="view" id="view-curso" hidden></section>
+        <section class="view" id="view-perfil" hidden></section>
+      </main>
+
+      <!-- Bottom nav -->
+      <nav class="bottom-nav" id="bottom-nav">
+        <button class="nav-item is-active" data-view="inicio">
+          <span class="nav-icon">⌂</span><span class="nav-label">Inicio</span>
+        </button>
+        <button class="nav-item" data-view="curso">
+          <span class="nav-icon">✦</span><span class="nav-label">Curso</span>
+        </button>
+        <button class="nav-item" data-view="perfil">
+          <span class="nav-icon">▢</span><span class="nav-label">Perfil</span>
+        </button>
+      </nav>
+    </div>
+
+    <script src="/js/config.js"></script>
+    <script src="/js/content-manifest.js"></script>
+    <script src="/js/md-render.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
