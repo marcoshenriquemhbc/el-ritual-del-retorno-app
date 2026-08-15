@@ -1,4 +1,4 @@
-# **✨ El Ritual del Retorno**
+# **✨ El Ritual del Regresso**
 
 ---
 
@@ -42,7 +42,7 @@ Por tus respuestas, quedó claro algo importante:
 
 Cuando dos almas se conectan de verdad, el tiempo, la distancia y hasta otras personas no logran borrar por completo ese lazo.
 
-Es exactamente en este punto donde **El Ritual del Retorno** va a actuar.
+Es exactamente en este punto donde **El Ritual del Regresso** va a actuar.
 
 ---
 
@@ -57,7 +57,7 @@ A lo largo de este camino, mujeres que ya lo recorrieron cuentan sentir:
 * Señales que empiezan a aparecer — a veces sutiles, a veces imposibles de ignorar  
 * Y, sobre todo, la sensación de estar de nuevo al mando de su propia historia
 
-📌 Esto no sucede por suerte. Sucede porque cada etapa de **El Ritual del Retorno** fue diseñada con un propósito específico — y vas a entender cada una de ellas justo en el momento en que la necesites.
+📌 Esto no sucede por suerte. Sucede porque cada etapa de **El Ritual del Regresso** fue diseñada con un propósito específico — y vas a entender cada una de ellas justo en el momento en que la necesites.
 
 ---
 
@@ -91,7 +91,7 @@ Vas a ser guiada en cada paso de este viaje.
 A medida que avances por los próximos módulos, vas a:
 
 * Prepararte por dentro antes de actuar por fuera — porque el estado en el que llegas al momento correcto importa tanto como el momento en sí  
-* Vivir el corazón de **El Ritual del Retorno** — la parte más esperada de todo este viaje  
+* Vivir el corazón de **El Ritual del Regresso** — la parte más esperada de todo este viaje  
 * Aprender qué hacer (y sobre todo qué no hacer) mientras la energía trabaja por ti  
 * Y, por último, descubrir cómo fortalecerte por dentro, para que, cuando él regrese, estés lista para esa nueva página — no la misma de antes
 
