@@ -1,11 +1,11 @@
 /**
- * SERVICE WORKER — El Ritual del Retorno
+ * SERVICE WORKER — El Ritual del Regresso
  * Cachea el "app shell" (HTML/CSS/JS) para que la app abra rápido y
  * funcione offline. El contenido (.md) usa network-first con fallback
  * a cache, para que actualizaciones de contenido lleguen apenas haya
  * conexión, sin dejar de funcionar sin internet.
  */
-var CACHE_NAME = 'ritual-retorno-v1';
+var CACHE_NAME = 'ritual-retorno-v2';
 var APP_SHELL = [
   '/',
   '/index.html',
