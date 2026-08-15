@@ -46,7 +46,7 @@
   function renderInicio() {
     views.inicio.innerHTML =
       '<h1 class="view-title">Bienvenida</h1>' +
-      '<p class="view-subtitle">Este es tu espacio personal dentro de El Ritual del Retorno.</p>' +
+      '<p class="view-subtitle">Este es tu espacio personal dentro de El Ritual del Regresso.</p>' +
       '<div class="stat-row">' +
       '  <div class="stat"><div class="stat__value" id="stat-progreso">—</div><div class="stat__label">completado</div></div>' +
       '</div>' +
@@ -104,7 +104,7 @@
 
     views.curso.innerHTML =
       '<h1 class="view-title">Curso</h1>' +
-      '<p class="view-subtitle">El Ritual del Retorno — módulos y bonos.</p>' +
+      '<p class="view-subtitle">El Ritual del Regresso — módulos y bonos.</p>' +
       '<div class="module-list">' +
       modulos.map(function (item, i) { return cardHtml(item, i + 1); }).join('') +
       '</div>' +
